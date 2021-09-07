@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BoilingVerdict from "./BoilingVerdict";
+import BoilingVeredict from "./BoilingVeredict";
 import TemperatureInput from "./TemperatureInput";
 import { tryConvert, toCelsius, toFahrenheit } from "./ConversionFunctions";
 
@@ -43,7 +43,7 @@ export default class Calculator extends Component {
           }
         />
 
-        <BoilingVerdict celsius={parseFloat(celsius)} />
+        <BoilingVeredict celsius={parseFloat(celsius)} />
       </div>
     );
   }
