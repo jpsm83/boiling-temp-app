@@ -1,10 +1,10 @@
 import './App.css';
-import TemperatureInput from './components/TemperatureInput';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <div>
-      <TemperatureInput/>
+      <Calculator />
     </div>
   );
 }
