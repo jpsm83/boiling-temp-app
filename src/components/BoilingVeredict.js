@@ -1,9 +1,16 @@
-import React from "react";
-
-export default function boilingVerdict(props) {
-  if (props.celsius >= 100) {
-    return <p>The water would boil.</p>;
+import React from 'react';
+import Label from './Label';
+ 
+const boilingVerdict = (props) => {
+ 
+  if (props.celsius >= 200) {
+    return <Label theColor={props.color}> It's over 200 Celsius, it's boooiiiilingg! </Label>;        
+  } else if (props.celsius >= 100) {
+    return <Label theColor={props.color}>The water would boil.</Label>;
   } else {
-    return <p>The water would not boil.</p>;
+    return <Label theColor={props.color}>The water would not boil.</Label>;
   }
+ 
 }
+ 
+export default boilingVerdict;
